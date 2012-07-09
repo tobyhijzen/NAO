@@ -11,18 +11,12 @@ moduledict = {}
 #show frameworks print's (1=show, 0=do not show)
 VERBOSE = 1
 
-####
+####################
 ## Register modules:
-#######
+####################
 
-
-
-
-
-
-
-
-
+moduledict["main"] = "main"
+modulEdict["globals"] = [1, "globals"]
 
 ###########################
 # start & run framework
