@@ -16,7 +16,8 @@ VERBOSE = 1
 ####################
 
 moduledict["main"] = "main"
-modulEdict["globals"] = [1, "globals"]
+moduledict["globals"] = [1, "globals"]
+moduledict["motion"] = [1, "motion_v1"]
 
 ###########################
 # start & run framework

@@ -3,6 +3,12 @@ import time
 class motion_v1():    
     globals = None
     
+    def myOpenHand(self):
+        self.globals.motProxy.openHand("RHand")
+    def myCloseHand(self):
+        self.globals.motProxy.closeHand("RHand")
+	
+    
     # set footgaitconfig to default values
     gaitConfig        = [['MaxStepX', 0.04], \
                          ['MaxStepY', 0.14], \
@@ -1437,7 +1443,7 @@ class motion_v1():
     def stiff(self):
         if self.globals.motProxy.getStiffnesses('HeadPitch') != 0:
             self.globals.motProxy.setStiffnesses(['RArm', 'LArm', 'LLeg', 'RLeg', 'Head'],
-            [0.6, 0.6, 0.6, 0.6,0.6,0.6,0.6,0.6, 
+            [0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6,0.6,0.6,0.6,0.6, 
              0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 
              0.95, 0.95, 0.95,0.95,0.95,0.95, 0.6,0.6])
         
